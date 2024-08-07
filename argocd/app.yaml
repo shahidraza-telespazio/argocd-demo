@@ -13,3 +13,11 @@ spec:
     repoURL: https://github.com/shahidraza-telespazio/argocd-demo  # Can point to either a Helm chart repo or a git repo.
     targetRevision: HEAD  # For Helm, this refers to the chart version.
     path: app  # This has no meaning for Helm charts pulled directly from a Helm repo instead of git.
+  
+  destination:
+    # cluster API URL
+    server: https://kubernetes.default.svc
+    # or cluster name
+    # name: in-cluster
+    # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
+    namespace: app
