@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: docker.io/shahidraza098/argocd-fastapi:latest
+        image: shahidraza0098/argocd-fastapi:latest
         ports:
         - containerPort: 80
